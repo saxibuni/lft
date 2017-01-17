@@ -1,0 +1,168 @@
+<div id="saveMoneyContent">
+	<form id="saveMoneyForm">
+		<table>
+			<tr>
+				<!--<td width='25%'><a href="javascript:;">在线支付</a></td>
+				<td width='25%'><a href="javascript:;">手机支付</a></td>
+				<td width='25%'><a href="javascript:;">点卡支付</a></td>-->
+				<td width="50%"><a href="javascript:;" class="aSelect" id="bankPay">银行支付</a></td>
+				<td width="50%"><a href="javascript:;" id="aliPay">支付宝支付</a></td>
+			</tr>
+		</table>
+		
+		<div class="transactionItem">
+
+			<span>选择优惠</span>
+			<select id="promotionSelect">		
+			</select>
+
+			<span>存款金额</span>
+			<input type="text" placeholder="(最小：25.00/最大：50,000.00)" id="saveAmount" class="moneyInput" />
+<div id="bankPayZoom">
+			<span>收款银行</span>
+			<select name="" id="bankInfo">
+				<option value="">请选择银行</option>
+				<option value="ABC">中国农业银行</option>
+                <option value="BCM">交通银行</option>
+                <option value="BOC">中国银行</option>
+                <option value="CCB">中国建设银行</option>
+                <option value="CMB">招商银行</option>
+                <option value="CMBC">中国民生银行</option>
+                <option value="HXB">华夏银行</option>
+                <option value="CIB">兴业银行</option>
+                <option value="ICBC">中国工商银行</option>
+                <option value="PSBC">中国邮政储蓄</option>					
+			</select>
+
+			<span>收款账号</span>
+			<input type="text" id="bankAcctNo" placeholder="请联系客服人员取得存款账号*" />
+
+			<span>收款人姓名</span>
+			<input type="text" id="bankAcctName" />
+</div>
+			<div class="checkDiv" style="display:none;">
+				<input type="checkbox" id="checkAllowItem" /><label for="checkAllowItem">申请拉户籍存款红利<span>(</span><span style="text-decoration:underline;">我接受存款优惠红利条款规则</span><span>)</span></label>
+			</div>
+			<br />
+			<div class="moreGameDiv" id="saveMomeyBtn">
+				<div></div>
+				<div>提交</div>
+				<div></div>
+				<div style="clear:both;height:0"></div>
+			</div>
+		</div>
+
+	</form>
+</div>
+
+<style>
+
+	#saveMoneyContent tr td{
+		height: 3rem;
+		background-color: rgb(194,194,194);
+		padding: 0.5rem;
+	}
+
+	#saveMoneyContent tr td a{
+		display: inline-block;
+		height: 2rem;
+		width: 100%;
+		color: rgb(60,60,60);
+		background: -webkit-linear-gradient(rgb(240,238,239),rgb(217,215,216));
+		background: -o-linear-gradient(rgb(240,238,239),rgb(217,215,216));
+		background: -moz-linear-gradient(rgb(240,238,239),rgb(217,215,216));		
+		background-color: linear-gradient(rgb(240,238,239),rgb(217,215,216));
+		border-radius: 0.3rem;
+		border: 1px solid rgb(153,153,154);
+		font-size: 1rem;
+		line-height: 2rem;
+		text-align: center;
+	}
+
+	#saveMoneyContent .aSelect{
+		background: -webkit-linear-gradient(rgb(204, 202, 203),rgb(117, 116, 116));
+		background: -o-linear-gradient(rgb(204, 202, 203),rgb(117, 116, 116));
+		background: -moz-linear-gradient(rgb(204, 202, 203),rgb(117, 116, 116));		
+		background-color: linear-gradient(rgb(204, 202, 203),rgb(117, 116, 116));
+	}
+
+	#saveMoneyContent .transactionItem{
+		padding: 0.8rem 1rem;
+	}
+
+	#saveMoneyContent span{
+		display: block;
+		font-size: 1.2rem;
+	}
+
+	#saveMoneyContent .checkDiv{
+		height: 2rem;
+	}
+
+	#saveMoneyContent input[type="checkbox"] + label {
+	    float: left;
+	    margin: 0.5rem 0;
+	    padding: 0;
+	    font-size: 1rem;
+	    left: 2rem;
+	    width: initial;
+	}
+
+	#saveMoneyContent label:before {
+	    border: 2px solid #AB9128;
+	    left: -2rem;
+	    top: 0.35rem;
+	    width: 1.3rem;
+	    height: 1.3rem;
+	    color: #AB9128;
+	    background: initial;
+	}
+
+	#saveMoneyContent input[type="checkbox"]:checked + label:before {
+	    font-size: 0.8rem;
+	    content: '\2714';
+	    line-height: 1.3rem;
+	}
+
+	#saveMoneyContent .checkDiv span{
+		display: inline-block;
+	    font-size: 1rem;
+	    line-height: 2rem;
+	    color: rgb(54,150,0);
+	}
+
+	#saveMoneyContent .moreGameDiv{
+		padding: 0.5rem 0rem;
+		cursor: pointer;
+	}
+
+	#saveMoneyContent .moreGameDiv >div:nth-child(1){
+		width: 2%;
+		height: 3.5rem;
+		float: left;
+		background: url('css/images/A11_red_left.png');
+		background-size: 100% 100%;
+	}
+
+	#saveMoneyContent .moreGameDiv > div:nth-child(2){
+		width: 96%;
+		height: 3.5rem;
+		float: left;
+		background: url('css/images/A11_red_center.png');
+		background-size: 100% 100%;
+		color: #711315;
+		font-weight: bold;
+		font-size: 1.5rem;
+		line-height: 3.5rem;
+		text-align: center;
+	}
+
+	#saveMoneyContent .moreGameDiv > div:nth-child(3){
+		width: 2%;
+		height: 3.5rem;
+		float: left;
+		background: url('css/images/A11_red_right.png');
+		background-size: 100% 100%;
+	}
+
+</style>

@@ -1,0 +1,200 @@
+<div id="applyContent">
+	<div class="applyDes">申请优惠</div>
+	<div class="applyItem">
+		<span>选择优惠</span>
+		<select name="" id="">
+			<option value="救援金">救援金</option>			
+		</select>
+	<!--	
+		<span>被推荐账户</span>
+		<input type="text" placeholder="转入至游戏账户" />
+		<span>优惠金额</span>
+		<div class="applyAccount">
+			<div><input type="text"></div>
+			<div><a href="javascript:;">申请结算</a></div>
+		</div>
+	-->
+		<span>温馨提示</span>
+		<p style="line-height:1rem;font-size:0.9rem">1. 每笔存款200元为符合条件申请此优惠，可多次申请。</p>
+		<p style="line-height:1rem;font-size:0.9rem">2. 需要达到救援金申请条件才可申请。</p>
+		<p style="line-height:1rem;font-size:0.9rem">3. 同一笔存款不能同时申请两种优惠</p>
+		<p style="line-height:1rem;font-size:0.9rem">4. 审核无误，救援金会在申请后的一小时内派发到玩家的主账户。</p>	
+
+		<div class="moreGameDiv" id="applyPromotion">
+			<div></div>
+			<div>提交申请</div>
+			<div></div>
+			<div style="clear:both;height:0"></div>
+		</div>
+
+	</div>
+
+<!--
+	<div class="viptitle">
+		<img src="css/images/A18.png"><div>VIP优惠</div>
+	</div>
+	<div class="vipItem">
+		<div>选择VIP优惠</div>
+		<select name="" id="">
+			<option value="1">1</option>
+			<option value="1">1</option>
+			<option value="1">1</option>			
+		</select>
+		<span>优惠金额</span>
+		<div class="applyAccount">
+			<div><input type="text"></div>
+			<div><a href="javascript:;">申请结算</a></div>
+		</div>
+
+		<div class="moreGameDiv">
+			<div style="background: url('css/images/A11_yellow_left.png');background-size:100% 100%;"></div>
+			<div style="background: url('css/images/A11_yellow_center.png');background-size:100% 100%;">提交申请</div>
+			<div style="background: url('css/images/A11_yellow_right.png');background-size:100% 100%;"></div>
+			<div style="clear:both;height:0"></div>
+		</div>
+
+	</div>
+-->	
+</div>
+
+<style>
+
+	#applyContent .applyDes{
+		height: 3rem;
+		line-height: 3rem;
+		font-size: 1.2rem;
+		color: #FFF;
+		background-color: #333;
+		padding: 0 1rem;
+	}
+
+	#applyContent .applyItem{
+		background-color: #d9d9d9;
+		padding: 0.8rem 1rem;
+	}
+
+	#applyContent span{
+		display: block;
+		font-size: 1.2rem;
+	}
+
+	#applyContent .applyAccount{
+		height: 3rem;
+		border: 0.3rem;
+		background-color: #fff;
+		border-radius: 5px;
+		margin-top: 0.5rem;
+	}
+
+	#applyContent .applyAccount div:nth-child(1){
+		height: 100%;
+		padding: 0;
+		width: -moz--calc(100% - 9rem);
+		width: -webkit-calc(100% - 9rem);		
+		width: calc(100% - 9rem);
+		float: left;
+	}
+
+	#applyContent .applyAccount input[type='text'] {
+		height: 2.5rem;
+		margin: 0.25rem 0.25rem;
+		border: none;
+		width: 100%;
+		outline: none;
+	}
+
+	#applyContent .applyAccount div:nth-child(2){
+		height: 100%;
+		padding: 0.2rem 0.2rem;
+		width: 8rem;
+		float: right;
+	}
+
+	#applyContent .applyAccount a{
+		background: -webkit-linear-gradient(rgb(132, 13, 16), rgb(97,8,9));
+		background: -o-linear-gradient(rgb(132, 13, 16), rgb(97,8,9));
+		background: -moz-linear-gradient(rgb(132, 13, 16), rgb(97,8,9));
+		background: linear-gradient(rgb(132, 13, 16), rgb(97,8,9));
+		border-radius: 0.3rem;
+		box-shadow: 0 0 0.2rem rgb(111,17,19);
+		display: inline-block;
+		font-size: 1.5rem;
+		height: 2.6rem;
+		line-height: 2.6rem;
+		color: #FFF;
+		text-align: center;
+		width: 100%;
+	}
+
+
+	#applyContent .moreGameDiv{
+		padding: 0.5rem 0rem;
+		cursor: pointer;
+	}
+
+	#applyContent .moreGameDiv >div:nth-child(1){
+		width: 2%;
+		height: 3.5rem;
+		float: left;
+		background: url('css/images/A11_red_left.png');
+		background-size: 100% 100%;
+	}
+
+	#applyContent .moreGameDiv > div:nth-child(2){
+		width: 96%;
+		height: 3.5rem;
+		float: left;
+		background: url('css/images/A11_red_center.png');
+		background-size: 100% 100%;
+		color: #711315;
+		font-weight: bold;
+		font-size: 1.5rem;
+		line-height: 3.5rem;
+		text-align: center;
+	}
+
+	#applyContent .moreGameDiv > div:nth-child(3){
+		width: 2%;
+		height: 3.5rem;
+		float: left;
+		background: url('css/images/A11_red_right.png');
+		background-size: 100% 100%;
+	}
+	
+	#applyContent .vipItem{
+		background: #a27a59;
+		padding: 0.8rem 1rem;
+	}
+
+	#applyContent .viptitle{
+		height: 3rem;
+		background: url('css/images/A19.png');
+		background-size: 100% 100%;
+	}
+
+	#applyContent .viptitle img{
+		margin-top: 0.4rem;
+		height: 2rem;
+		width: 2rem;
+		margin-left: 1rem;
+		float: left;
+	}
+
+	#applyContent .viptitle div{
+		height: 3rem;
+		line-height: 3rem;
+		font-size: 1.5rem;
+		font-weight: bold;
+		color: #FFF;
+		float: left;
+		margin-left:0.5rem;
+	}
+
+
+
+
+
+
+
+	
+</style>

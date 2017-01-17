@@ -1,0 +1,5 @@
+{
+	"debugMode" : "true",
+	"timeout": 20,
+	"service": "ws://m.staging.cmdlotto.net:8040/websocket"
+}

@@ -1,0 +1,51 @@
+{
+	"MSG_CANCEL": "取消",
+	"MSG_OK": "确定",
+	"MSG_RES_1" : "用户信息过期，请重新登录",
+	"MSG_CANNOTNULL" : "用户名或密码不能为空",
+	"MSG_RES_30000" : "当前密码不正确",
+	"MSG_RES_30001" : "用户不存在",
+	"MSG_RES_30002" : "用户未激活",
+	"MSG_RES_30003" : "用户名或密码错误",
+
+	"MSG_RES_40000" : "Email已存在",
+	"MSG_RES_40001" : "用户名已存在",
+	"MSG_RES_40002" : "用户QQ已存在",
+	"MSG_RES_40003" : "用户名字与Ip已存在",
+	"MSG_RES_40004" : "用户手机号已存在",
+	"MSG_RES_0": "用户注册成功",
+
+
+	"MSG_DEPOSIT_SUCCESS" : "存款成功",
+	"MSG_DEPOSIT_FAILED" : "存款失败，请确保填写的存款内容正确",
+	"MSG_RES_30035" : "小于存款最小限制数额",
+	"MSG_RES_30036" : "大于存款最大限制数额",
+
+	"MSG_WITHDRAWAL_SUCCESS" : "取款成功",
+	"MSG_WITHDRAWAL_FAILED" : "取款失败，请确保填写的取款内容正确",
+	"MSG_RES_30307" : "小于取款最小限制数额",
+	"MSG_RES_30308" : "大于取款最小限制数额",	
+
+	"MSG_LINK_GAME" : "尚未登录，无法启动游戏。是否需要登录账户信息？",
+
+	"MSG_APPLYPROMOTION__SUCCESS" : "申请优惠成功",
+	"MSG_RES_40311" : "该优惠已经申请过",
+	"MSG_RES_40313" : "该优惠正在处理中",
+	
+	"MSG_VALID_NAME" : "用户名长度不符合要求",
+	"MSG_VALID_PWD" : "密码长度不符合要求",
+	"MSG_VALID_REPWD" : "输入密码不一致",
+	"MSG_VALID_REALNAME_NULL" : "真实姓名不能为空",
+	"MSG_VALID_REALNAME_CN" : "真实姓名必须为中文",
+	"MSG_VALID_TEL" : "请输入合法手机号码",
+	"MSG_VALID_QQ" : "请输入合法qq号",
+	"MSG_VALID_EMAIL" : "请输入合法邮箱地址",
+	"MSG_CHECK1" : "请同意乐富通相关条款，条件，规则及隐私声明的所有政策",
+	"MSG_CHECK2" : "未满18岁不能注册",
+
+	"MSG_VALID_AMOUNT" : "请输入合法金额",
+	"MSG_TRANS_VALID" : "转入账户和转出账户不能一样",
+	"MSG_TRANS_SUCCESS" : "转账成功",
+	"MSG_RES_30034" : "余额不足"
+
+}

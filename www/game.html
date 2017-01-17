@@ -1,0 +1,355 @@
+<div id="gameContent">
+	<div class="bg"></div>
+
+	<div class="gameMenu">
+		<div>
+			<div class="searchDiv">
+				<div style="float:right;cursor:pointer;" id="gameSearch"><img src="css/images/icon_magnifier.png"></div>
+				<div style="width:10rem;float:right;">
+					<input type="text" style="width:50;" placeholder="输入游戏名称" id="gameName">
+				</div> 
+			</div>
+			<div style="clear:both;"></div>
+		</div>	
+			
+		<div class="gameType">
+			
+
+			<div>
+				<a href="javascript:;" gameType="SG">
+					<div><img src="css/images/A07_cherry_out.png" alt=""></div>
+					<div class="name">SG老虎机</div>
+				</a>					
+			</div>
+
+			<div>
+				<a href="javascript:;" gameType="PT">
+					<div><img src="css/images/A07_bell_out.png" alt=""></div>
+					<div class="name">PT老虎机</div>				
+				</a>
+			</div>
+
+			<!--
+			<div>
+				<a href="javascript:;" gameType="GP">
+					<div><img src="css/images/A07_lemon_out.png" alt=""></div>
+					<div class="name">GP老虎机</div>
+				</a>				
+			</div>
+			<div>
+				<a href="javascript:;" gameType="TT">
+					<div><img src="css/images/A07_seven_out.png" alt=""></div>
+					<div class="name">TT老虎机</div>
+				</a>				
+			</div>
+			-->
+			<div style="height:0rem;clear:both"></div>
+		</div>
+
+		<div class="gameInfo">
+			<div class="content" style="margin:auto;">
+				<ul id="gameUl">
+
+				</ul>
+				<div style="clear:both;"></div>
+			</div>
+
+		</div>
+		
+		<div class="moreGameDiv" id="moreGame">
+			<div></div>
+			<div>加载更多游戏</div>
+			<div></div>
+			<div style="clear:both;height:0"></div>
+		</div>
+		
+
+	</div>
+
+	<div class="loginBottom">
+		<table style="width:100%">
+			<tr>
+				<td width="40%">
+					<img src="css/images/A12_sg.png" style="width:6rem;height:2rem;" />
+				</td>
+				<td width="0%">
+					
+				</td>
+				<td width="50%">
+					<img src="css/images/A12_pt.png" style="width:6rem;height:2rem;" />
+				</td>
+				<td>
+					<img src="css/images/A12_18.png" style="height:3rem;width:2rem;" />
+				</td>
+			</tr>
+		</table>
+
+		<div style="padding:0 1rem;height:auto;">
+			<div>乐富通作为游戏网的运营者，我们认真对待社会责任，把它作为对待顾客，公众和股东，以及员工的基本的职责。我们作为一个有社会责任感的企业，我们不能强求顾客，员工及股东该必须怎么做，然而，我们会规范我们自身的规则和行为准则，我们对社会的责任是以顾客的职责态度为基础的。</div>
+			<div style="text-align:center;"><span>© 2015 版权归乐富通所有，违者必究</span></div>				
+		</div>
+	</div>
+
+	<span id="gameTypeParams" style="display:none;">SG</span>
+	
+	<div id="msgText" style="display:none;"></div>
+</div>
+
+<style>
+	#gameContent .bg{
+		height:13rem;
+		background: url("css/images/A05_lobby.jpg");
+		background-size: 100% 100%;
+	}
+
+	#gameContent .gameMenu > div:nth-child(1) {
+		background: url("css/images/A06.png");
+		background-size: 100% 100%;
+		border-bottom: 1px solid #aaa;
+	}
+
+	#gameContent .gameMenu > div:nth-child(2) {
+		background: url("css/images/A06.png");
+		background-size: 100% 100%;
+		border: none;
+		border-radius:0rem 0rem 0.5rem 0.5rem;
+		height: 5.5rem;
+		padding: 0.25rem 0rem;
+	}
+
+	#gameContent .searchDiv{
+		float: right;
+		background: #FFF;
+		margin: 0.3rem 0;
+		border-radius: 1.5rem;
+		margin-right: 1.5rem;
+		padding: 0 1rem;
+		height: 2.5rem;
+	}
+
+	#gameContent .searchDiv img{
+		height: 2rem;
+		width: 2rem;
+		margin: 0.25rem 0;
+	}
+
+	#gameContent .searchDiv input{
+		border: none;
+		outline: none;
+		height: 2rem;
+		width: 100%;
+		margin: 0.25rem 0;		
+	}
+
+	#gameContent .gameType > div{
+		width: 25%;
+		height: 5rem;
+		text-align: center;
+		float: left;
+		background: transparent;
+	}
+
+	#gameContent .gameType > div > a{
+	    display: inline-block;
+	    height: 4.4rem;
+	    margin-top: 0.3rem;
+	    width: 80%;
+	    color: #000;
+	}
+
+	#gameContent .gameType > div > a:hover{
+		background: -webkit-linear-gradient(rgb(164,162,163), rgb(148,146,148));
+		background: -o-linear-gradient(rgb(164,162,163), rgb(148,146,148));
+		background: -moz-linear-gradient(rgb(164,162,163), rgb(148,146,148));
+		background: linear-gradient(rgb(164,162,163), rgb(148,146,148));
+		border-radius: 0.3rem;
+	}
+
+	#gameContent .gameType > div > .background{
+		background: -webkit-linear-gradient(rgb(164,162,163), rgb(148,146,148));
+		background: -o-linear-gradient(rgb(164,162,163), rgb(148,146,148));
+		background: -moz-linear-gradient(rgb(164,162,163), rgb(148,146,148));
+		background: linear-gradient(rgb(164,162,163), rgb(148,146,148));
+		border-radius: 0.3rem;
+	}
+
+	#gameContent .gameType .name{
+		height: 1.5rem;
+		font-size: 1rem;
+		line-height: 1.5rem;
+	}
+
+	#gameContent .gameType img{
+		height: 2.5rem;
+		width: 2.5rem;
+	}
+	
+
+	#gameContent .gameInfo {
+		padding: 0 1rem;
+		/*background: url('css/images/A15.jpg') no-repeat;*/
+		background-size: 100% 100%;
+	}
+
+	#gameContent .gameInfo li{
+		list-style: none;
+		display: inline-block;
+		float: left;
+		/*width: 33%;*/
+		position: relative;
+	}
+
+	#gameContent .gameInfo li > div{
+		margin: 0.25rem 0.5rem;
+		text-align: center;
+		padding: 5%;
+		padding-top: 10%;
+		cursor: pointer;	
+
+		-webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -ms-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        /*position: absolute;	*/
+	}
+
+	#gameContent .gameInfo li > div >img:nth-child(1){
+		width: 90%;
+		height: 85%;
+	}
+
+	#gameContent .gameInfo li > div >div:nth-child(2){
+		height: 1.2rem;
+		font-size: 1rem;
+		line-height: 1.2rem;
+		color: #a4a4a4;
+		text-align: center;
+		font-weight: bold;
+		white-space:nowrap;
+		overflow:hidden; 
+		text-overflow:ellipsis;
+	}
+
+	#gameContent .moreGameDiv{
+		padding: 0.5rem 1rem;
+		cursor: pointer;
+	}
+
+	#gameContent .moreGameDiv >div:nth-child(1){
+		width: 2%;
+		height: 3rem;
+		float: left;
+		background: url('css/images/A11_red_left.png');
+		background-size: 100% 100%;
+	}
+
+	#gameContent .moreGameDiv > div:nth-child(2){
+		width: 96%;
+		height: 3rem;
+		float: left;
+		background: url('css/images/A11_red_center.png');
+		background-size: 100% 100%;
+		color: #711315;
+		font-weight: bold;
+		font-size: 1.5rem;
+		line-height: 3rem;
+		text-align: center;
+	}
+
+	#gameContent .moreGameDiv > div:nth-child(3){
+		width: 2%;
+		height: 3rem;
+		float: left;
+		background: url('css/images/A11_red_right.png');
+		background-size: 100% 100%;
+	}
+
+
+	/***** css animation  start  ***/
+
+        .upper{
+        	background: url('css/images/A13.png');
+			background-size: 100% 100%;
+            -moz-transform-style: preserve-3d;
+            -moz-backface-visibility: hidden;
+            -webkit-transform-style: preserve-3d;
+            -webkit-backface-visibility: hidden;
+        }
+        .lower{
+            -moz-transform-style: preserve-3d;
+            -moz-backface-visibility: hidden;/*抖动*/
+            -webkit-transform-style: preserve-3d;
+            -webkit-backface-visibility: hidden;
+            -moz-transform: rotateY(-180deg);
+            -webkit-transform: rotateY(-180deg);
+            position: absolute;
+            top: 0;
+            width: 90%;
+        }
+
+        .lower > a{
+        	display: block;
+        	font-size: 20px;
+        	text-align: center;
+        	line-height: 40px;  	
+        	height: 42px;
+        	margin: 25% 0.2rem;
+        }
+
+        .lower .startGame{
+		    background: -webkit-gradient(linear,left top,left bottom,from(#f1d301),to(#daaa01));
+		    background: -webkit-linear-gradient(top, #f1d301, #daaa01);
+		    background: -moz-linear-gradient(top, #f1d301, #daaa01);
+		    background: -o-linear-gradient(top, #f1d301, #daaa01);
+		    background: linear-gradient(to bottom, #f1d301, #daaa01);
+		    text-shadow: 0 1px 0 rgba(255,255,255, .6);
+		    border: 1px solid #a48437;
+		    color: #443709;
+		    border-radius: 4px;
+        }
+
+        .lower .testGame{
+		    background: -webkit-gradient(linear,left top,left bottom,from(#0d572b),to(#005a28));
+		    background: -webkit-linear-gradient(top, #0d572b, #005a28);
+		    background: -moz-linear-gradient(top, #0d572b, #005a28);
+		    background: -o-linear-gradient(top, #0d572b, #005a28);
+		    background: linear-gradient(to bottom, #0d572b, #005a28);
+		    text-shadow: 0 1px 0 rgba(0,0,0, .4);
+		    border: 1px solid #0d572b;
+		    color: #fff;
+		    border-radius: 4px;
+        }
+
+        .lower .downloadGame {
+        	background: -webkit-gradient(linear,left top,left bottom,from(#7f9516),to(#da8229));
+		    background: -webkit-linear-gradient(top, #7f9516, #da8229);
+		    background: -moz-linear-gradient(top, #7f9516, #da8229);
+		    background: -o-linear-gradient(top, #7f9516, #da8229);
+		    background: linear-gradient(to bottom, #7f9516, #da8229);
+		    text-shadow: 0 1px 0 rgba(255,255,255, .6);
+		    border: 1px solid #a48437;
+		    color: #443709;
+		    border-radius: 4px;
+		    margin: calc(50% - 20px) 0.2rem;
+		    margin: -webkit-calc(50% - 20px) 0.2rem;
+		    margin: -moz-calc(50% - 20px) 0.2rem;
+        }
+
+        .transformUpper{
+            -moz-transform: rotateY(180deg);
+            -webkit-transform: rotateY(180deg);
+        }
+
+        .transformLower{
+            -moz-transform: rotateY(0deg);
+            -webkit-transform: rotateY(0deg);
+        }
+	/***** css animation  end   ***/
+
+
+	@media screen and (max-width: 740px){ #gameContent .gameInfo li{width:50%;}}
+	@media screen and (min-width: 1000px){#gameContent .gameInfo li{width: 200px;} .gameInfo .content{width: 810px}}
+	@media screen and (max-width: 1000px) and (min-width:700px) and (orientation:portrait) {#gameContent .gameInfo li{width:33.3%;} }
+			
+</style>

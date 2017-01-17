@@ -1,0 +1,120 @@
+<div id="AccountBalanceContent"  style="padding-bottom: 4rem;">
+	<div class="balanceTop">
+		<div><span id="logoName"></span><span>-普通会员</span></div>
+		<div>账户余额:</div>
+		<div class="balance">¥0.00</div>
+	</div>
+
+	<div class="accountAction">
+		<table>
+			<tr>
+				<td width="50%;">
+					<div><a href="#saveMoney" class="yellowBg">我要存款</a></div>
+				</td>
+				<td>
+					<div><a href="#withDrawals">我要提款</a></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div><a href="#gameTransfer">我要转账</a></div>					
+				</td>
+				<td>
+					<div><a href="#apply" data-transition="slide">申请优惠</a></div>
+				</td>
+			</tr>
+		</table>
+
+	</div>
+
+
+
+</div>
+
+<style>
+	
+	#AccountBalanceContent{
+		background: url('css/images/A15.jpg');
+	}
+
+	#AccountBalanceContent  .balanceTop{
+		background-color: #5e0607;
+		height: 10rem;
+		text-align: center;
+	}
+
+	#AccountBalanceContent .balanceTop >div:nth-child(1){
+		color: #FFF;
+		font-size: 1.5rem;
+		padding-top: 1.5rem;
+	}
+
+	#AccountBalanceContent .balanceTop >div:nth-child(2){
+		color: #CCC;
+		font-size: 1rem;
+		font-weight: bold;
+		margin-top: 1.3rem;
+	}
+
+	#AccountBalanceContent .balanceTop > div:nth-child(3){
+		color: #fff600;
+		font-size: 2rem;
+		font-weight: bold;
+		margin-top: 0.5rem;
+	}
+
+	#AccountBalanceContent .accountAction{
+		/*background: url('css/images/A15.jpg');*/
+		font-family: 'Ms YaHei';
+		padding: 2rem 3rem 2rem 2rem;
+	}
+
+
+	#AccountBalanceContent .accountAction table,tr,td{
+		border: none;
+		background: transparent;
+	}
+
+	#AccountBalanceContent .accountAction div{
+		height: 3rem;
+		font-size: 1.5rem;
+		line-height: 3rem;
+		margin: 0.3rem 0.4rem;
+	}
+
+	#AccountBalanceContent .accountAction a{
+		width: 100%;
+		height: 100%;
+		background: -webkit-linear-gradient(rgb(144,25,28), rgb(97,8,9));
+		background: -o-linear-gradient(rgb(144,25,28), rgb(97,8,9));
+		background: -moz-linear-gradient(rgb(144,25,28), rgb(97,8,9));
+		background: linear-gradient(rgb(144,25,28), rgb(97,8,9));
+		border-radius: 0.3rem;
+		box-shadow: 0 0 0.3rem rgb(111,17,19);
+		background-size: 100% 100%;
+		display: inline-block;
+		color: #FFF;
+		text-align: center;
+	}
+
+	#AccountBalanceContent .accountAction .yellowBg{
+		background-size: 100% 100%;
+		background: -webkit-linear-gradient(rgb(254,244,3), rgb(220,166,2));
+		background: -o-linear-gradient(rgb(254,244,3), rgb(220,166,2));
+		background: -moz-linear-gradient(rgb(254,244,3), rgb(220,166,2));
+		background: linear-gradient(rgb(254,244,3), rgb(220,166,2));
+		border-radius: 0.3rem;
+		box-shadow: 0 0 0.3rem rgb(180,152,5);
+	}
+
+	#AccountBalanceContent .accountAction .vip{
+		background-size: 100% 100%;
+		background: -webkit-linear-gradient(rgb(45,152,50), rgb(18,80,3));
+		background: -o-linear-gradient(rgb(45,152,50), rgb(18,80,3));
+		background: -moz-linear-gradient(rgb(45,152,50), rgb(18,80,3));
+		background: linear-gradient(rgb(45,152,50), rgb(18,80,3));
+		border-radius: 0.3rem;
+		box-shadow: 0 0 0.3rem rgb(16,72,1);
+	}
+
+</style>

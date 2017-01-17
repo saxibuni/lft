@@ -1,0 +1,128 @@
+<div id="registerContent">
+	<form id="registerForm">
+		<div>会员注册</div>
+		<input type="text" placeholder="用户名*" id="MemId" />
+		<input type="text" placeholder="用户密码*" id="MemPwd" />
+		<input type="text" placeholder="确认密码*" id="Re_memPwd" />
+		<input type="text" placeholder="真实姓名*" id="MemName" />
+		<select name="" id="Gender">
+			<option value="F">男</option>
+			<option value="M">女</option>			
+		</select>		
+		<input type="tel" placeholder="手机号*" id="ContactNumber" />
+		<input type="tel" placeholder="QQ*" id="QqNumber" />
+		<input type="text" placeholder="Email*" id="MemEmail" />
+		<input type="text" placeholder="推荐人*" id="ReferralId" />
+		
+		<div>
+			<input type="checkbox" id="check1"><label for="check1">	我理解且接受乐富通相关条款，条件，规则及隐私申明的所有政策</label>
+			<input type="checkbox" id="check2"><label for="check2">我申明我已年满18岁。</label>	
+			<div style="clear:both;height:0rem;"></div>
+			<a href="javascript:void(0);" id="confirmRegister">注册</a>
+		</div>
+
+	</form>
+
+	<div class="loginBottom">
+		<table style="width:100%">
+			<tr>
+				<td width="30%">
+					<img src="css/images/A12_pt.png" style="width:6rem;height:2rem;" />
+				</td>
+				<td width="30%">
+					<img src="css/images/A12_sg.png" style="width:6rem;height:2rem;" />
+				</td>
+				<td width="30%">
+					<img src="css/images/A12_gp.png" style="width:6rem;height:2rem;" />
+				</td>
+				<td>
+					<img src="css/images/A12_18.png" style="height:3rem;width:2rem;" />
+				</td>
+			</tr>
+		</table>
+
+		<div style="padding:0 1rem;">
+			<span>乐富通作为游戏网的运营者，我们认真对待社会责任，把它作为对待顾客，公众和股东，以及员工的基本的职责。我们作为一个有社会责任感的企业，我们不能强求顾客，员工及股东该必须怎么做，然而，我们会规范我们自身的规则和行为准则，我们对社会的责任是以顾客的职责态度为基础的。</span>
+			<div style="text-align:center;"><span>© 2015 版权归乐富通所有，违者必究</span></div>			
+		</div>
+	</div>
+</div>
+
+<style>
+
+	#registerContent{
+		background-color: #a4272a;
+	}
+
+	#registerForm{
+		padding: 1rem;
+	}
+
+	#registerForm > div:nth-child(1) {
+		height: 2rem;
+		line-height: 2rem;
+		color: #FFFFFF;
+		font-size: 1.2rem;
+	}
+
+	#confirmRegister{
+		height: 3rem;
+		line-height: 3rem;
+		display: inline-block;
+		background: url('css/images/A04_W100.png');
+		background-size: 100% 100%;
+		font-size: 1.5rem;
+		color: #FFFFFF;
+		width: 6rem;
+		text-align: center;
+		margin-top: 0.5rem;
+	}
+
+	#registerContent input[type="checkbox"] + label {
+	    float: left;
+	    margin: 0.5rem 0;
+	    padding: 0;
+	    font-size: 1rem;
+	    left: 2rem;
+	}
+
+	#registerContent label:before {
+	    border: 2px solid #AB9128;
+	    left: -2rem;
+	    top: 0rem;
+	    width: 1.3rem;
+	    height: 1.3rem;
+	    color: #AB9128;
+	    background: initial;
+	}
+
+	#registerContent input[type="checkbox"]:checked + label:before {
+	    font-size: 0.8rem;
+	    content: '\2714';
+	    line-height: 1.3rem;
+	}
+
+	.loginBottom{
+		padding-top: 1rem;
+		background-color: #FFFFFF;
+	}
+
+	.loginBottom td{
+		padding-left: 0.5rem;
+		height: 4rem;
+	}
+
+	.loginBottom > div > span:nth-child(1){
+		color: #a4a4a4;
+		font-size: 1rem;
+	}
+
+	.loginBottom >div > div >span{
+		color: #a4a4a4;
+		display: inline-block;
+		margin: 1rem auto;
+		font-size: 1rem;
+	} 
+
+
+</style>

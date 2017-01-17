@@ -1,0 +1,107 @@
+<div id="gameTansferConetent">
+	<div class="leftMoney">
+		<div>主钱包余额</div>
+		<div class="balance">¥0.00</div>
+	</div>
+
+	<div class="transferItem">
+		<span>从</span>
+		<select name="" id="fromProvide">
+			<option value="-">游戏账户</option>
+			<option value="PT">PT经典游戏</option>
+			<option value="SG">SG经典游戏</option>
+			<!--
+			<option value="GP">GP经典游戏</option>
+			<option value="TT">TT经典游戏</option>
+			-->				
+		</select>
+
+		<span>转至</span>
+		<select name="" id="toProvide">
+			<option value="-">游戏账户</option>
+			<option value="PT">PT经典游戏</option>
+			<option value="SG">SG经典游戏</option>
+			<!--
+			<option value="GP">GP经典游戏</option>
+			<option value="TT">TT经典游戏</option>
+			-->	
+		</select>
+		<span>请输入转账金额</span>
+		<input type="tel" class="moneyInput" id="amount">
+
+		<div class="moreGameDiv" id="transferAmount">
+			<div></div>
+			<div>立即转账</div>
+			<div></div>
+			<div style="clear:both;height:0"></div>
+		</div>
+	</div>
+
+</div>
+
+<style>
+
+	#gameTansferConetent .leftMoney{
+		height: 5rem;
+		background-color: #5e0607;
+		text-align: center;
+	}
+
+	#gameTansferConetent .leftMoney div:nth-child(1){
+		height: 2rem;
+		font-size: 1rem;
+		line-height: 3rem;
+		color: #FFF;
+	}
+
+	#gameTansferConetent .leftMoney div:nth-child(2){
+		height: 3rem;
+		font-size: 2rem;
+		color: #fff600;
+		line-height: 2.5rem;
+	}
+
+	#gameTansferConetent .transferItem{
+		padding: 0.8rem 1rem;
+	}
+
+	#gameTansferConetent span{
+		display: block;
+		font-size: 1.2rem;
+		color: #000;
+	}
+
+	#gameTansferConetent .moreGameDiv{
+		padding: 0.5rem 0rem;
+	}
+
+	#gameTansferConetent .moreGameDiv >div:nth-child(1){
+		width: 2%;
+		height: 3.5rem;
+		float: left;
+		background: url('css/images/A11_red_left.png');
+		background-size: 100% 100%;
+	}
+
+	#gameTansferConetent .moreGameDiv > div:nth-child(2){
+		width: 96%;
+		height: 3.5rem;
+		float: left;
+		background: url('css/images/A11_red_center.png');
+		background-size: 100% 100%;
+		color: #711315;
+		font-weight: bold;
+		font-size: 1.5rem;
+		line-height: 3.5rem;
+		text-align: center;
+	}
+
+	#gameTansferConetent .moreGameDiv > div:nth-child(3){
+		width: 2%;
+		height: 3.5rem;
+		float: left;
+		background: url('css/images/A11_red_right.png');
+		background-size: 100% 100%;
+	}
+
+</style>

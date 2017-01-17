@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>乐富通</title>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width,target=densitydpi=high-dpi,initial-scale=1.0,maximum-scale=1.0,user-scaleble=no,minimal-ui" />
+		<meta name="apple-mobile-web-app-capable" conent="yes" />
+	    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+	    <meta http-equiv="Pragma" CONTENT="no-cache">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	    <link rel="stylesheet" type="text/css" href="appframework-3.0/af.ui.css" />
+	    <link rel="stylesheet" type="text/css" href="appframework-3.0/icons.css" />
+	    <link rel="stylesheet" href="css/base.css">
+		
+	    <script type="text/javascript" charset="utf-8" src="appframework-3.0/jquery-2.1.1.js"></script>
+	    <script type="text/javascript" charset="utf-8" src="appframework-3.0/jquery.cookie.js"></script>
+	    <script type="text/javascript" charset="utf-8" src="appframework-3.0/appframework.ui.js"></script>
+
+		<script type="text/javascript" charset="utf-8" src="js/common/boot.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/common/page.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/common/locale.js"></script>		
+		<script type="text/javascript" charset="utf-8" src="js/common/popup.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/common/storage.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/common/service.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/common/const.js"></script>
+
+		<script type="text/javascript" charset="utf-8" src="js/controller/main.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/controller/leftNav.js"></script>				
+		<script type="text/javascript" charset="utf-8" src="js/controller/Login.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/controller/Register.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/controller/Apply.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/controller/AccountBalance.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/controller/GameTransfer.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/controller/Game.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/controller/SaveMoney.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/controller/Promotions.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/controller/WithDrawals.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/controller/OnlineService.js"></script>
+
+		<script>
+			$.afui.useOSThemes=false; //禁止自动选择皮肤
+			$.afui.openLinksNewTab=false;
+			$.afui.splitview=false;//禁止大于某个分辨率自动展开菜单
+
+		</script>
+
+		<style>
+			@media screen and (min-width: 240px){html{font-size:9px;}}
+			@media screen and (min-width: 320px){html{font-size:12px;}}
+			@media screen and (min-width: 380px){html{font-size:14px;}}
+			@media screen and (min-width: 420px){html{font-size:16px;}}
+			@media screen and (min-width: 450px){html{font-size:17px;}}
+			@media screen and (min-width: 480px){html{font-size:18px;}}
+			@media screen and (min-width: 540px){html{font-size:20.25px;}}
+			@media screen and (min-width: 600px){html{font-size:22px;}}
+			@media screen and (min-width: 640px){html{font-size:24px;}}
+			@media screen and (max-width: 640px){.loadingClass{font-size: 2rem;}  .loading{font-size: 1.5rem;} }
+    	</style>
+
+
+	</head>
+
+	<body>
+		<div id="afui">
+			<div id="splashscreen">
+				<div style="height:180px;"></div>
+				<h1 class="loadingClass">欢迎来到乐富通</h1>				
+				<span class="icon loading">加载中...</span>
+			</div>
+
+			<div class="view" id="page_login">
+				<header style="overflow:visible" id="header_login">
+					<div class="logo">
+						<img src="css/images/A03.png">
+					</div>
+					<a class="mainButton" data-left-menu="mainLeftMenu">
+						<div></div>
+					</a>
+					<a class="register" style="display:none;">立刻注册</a>
+				</header>
+
+				<header id="head_accountBalance">
+					<a class="mainButton" data-left-menu="mainLeftMenu">
+						<div></div>
+					</a>
+					<h1></h1>
+				</header>
+
+				<header id="header_account">
+					<a class="mainButton" data-left-menu="mainLeftMenu">
+						<div></div>
+					</a>
+					<h1></h1>
+				</header>
+
+				<div class="pages">
+					<div class="panel active" id="login" data-include="login.html" data-header="header_login" ></div>
+					<div class="panel" id="register" data-include="register.html" data-header="header_login" ></div>
+					<div class="panel" id="game" data-include="game.html" data-header="header_login"></div>
+					<div class="panel" id="accountBalance" data-include="accountBalance.html" title="财务中心" data-header="head_accountBalance" data-footer="footer_accountBalance" style="background: url('css/images/A15.jpg');"></div>
+					<div class="panel" id="gameTransfer" data-include="gameTransfer.html" title="转账" data-header="head_accountBalance" data-footer="footer_accountBalance" ></div>
+					<div class="panel" id="apply" data-include="apply.html" title="申请优惠" data-header="header_account" data-footer="footer_account"></div>
+					<div class="panel" id="saveMoney" data-include="saveMoney.html" title="我要存款" data-header="header_account" data-footer="footer_account"></div>
+					<div class="panel" id="withDrawals" data-include="withDrawals.html" title="我要取款" data-header="header_account" data-footer="footer_account"></div>	
+					<div class="panel" id="onlineService" data-include="onlineService.html" title="客服中心" data-header="header_account" ></div>
+					<div class="panel" id="promotions" data-include="promotions.html" title="优惠活动" data-header="header_account"></div>				
+				</div>
+					
+				<footer id="footer_accountBalance">
+					<div class="balanceType">
+						<div>
+							<span>PT老虎机余额</span><br>
+							<span id="pt_balance">¥0.00</span>
+						</div>
+						<div>
+							<span>SG老虎机余额</span><br>
+							<span id="sg_balance">¥0.00</span>
+						</div>
+						<!--
+						<div>
+							<span>GP老虎机余额</span><br>
+							<span id="gp_balance">¥0.00</span>
+						</div>
+						<div style="border:none;">
+							<span>TT老虎机余额</span><br>
+							<span id="tt_balance">¥0.00</span>
+						</div>
+						-->
+						<div style="height:0;clear:both"></div>									
+					</div>
+
+					<div class="menu">
+						<a href="#saveMoney" class="btn" data-transition="slide">存款</a>
+						<a href="javascript:void(0);" class="split"></a>
+						<a href="#withDrawals" class="btn" data-transition="slide">提款</a>
+						<a href="javascript:void(0);" class="split"></a>
+						<a href="#gameTransfer" class="btn" data-transition="slide">转账</a>
+						<a href="javascript:void(0);" class="split"></a>
+						<a href="#apply" class="btn" data-transition="slide">申请优惠</a>
+						<a href="javascript:void(0);" class="split"></a>
+						<a href="#onlineService" class="btn" data-transition="slide">在线客服</a>
+					</div>
+				</footer>
+
+				<footer style="height:3.5rem;" id="footer_account">
+					<div class="menu">
+						<a href="#saveMoney" class="btn" data-transition="slide">存款</a>
+						<a href="javascript:void(0);" class="split"></a>
+						<a href="#withDrawals" class="btn" data-transition="slide">提款</a>
+						<a href="javascript:void(0);" class="split"></a>
+						<a href="#gameTransfer" class="btn" data-transition="slide">转账</a>
+						<a href="javascript:void(0);" class="split"></a>
+						<a href="#apply" class="btn" data-transition="slide">申请优惠</a>
+						<a href="javascript:void(0);" class="split"></a>
+						<a href="#onlineService" class="btn" data-transition="slide">在线客服</a>
+					</div>
+				</footer>
+
+				<nav id="mainLeftMenu">
+					<div class="view active">
+						<div class="pages">
+							<div class="panel active nav" >
+								<ul>
+									<li class="titleNav">
+										<span>欢迎来到</span>
+										<div class="img"></div>
+										<span>娱乐城</span>
+									</li>
+									<li class="titleSplit">游戏分类</li>
+									<li class="split"></li>							
+									<li class="menuLink"><a href="#game" class="SG"><div class="imgbgSG"></div><span>SG老虎机</span></a></li>
+									<li class="split"></li>
+									<li class="menuLink"><a href="#game" class="PT"><div class="imgbgPT"></div><span>PT老虎机</span></a></li>
+									<li class="split"></li>	
+									<li class="titleSplit">乐富通中心</li>
+									<li class="split"></li>
+									<li class="menuLink"><a href="#promotions"><span>优惠活动</span></a></li>
+									<li class="split"></li>
+									<li class="menuLink"><a href="#onlineService"><span>客服中心</span></a></li>
+									<li class="split"></li>
+									<li class="menuLink loginItem"><a href="#login"><span>用户登录</span></a></li>
+									<li class="split loginItem"></li>
+									<li class="menuLink jurisdiction"><a href="#accountBalance"><span>财务中心</span></a></li>
+									<li class="split jurisdiction"></li>
+								</ul>
+								<a href="javascript:void(0);" id="logout" class="jurisdiction"><img src="css/images/icon_logout.png" alt=""><span>退出</span></a>
+
+							</div>
+
+						</div>
+					</div>
+				</nav>
+
+			</div>
+
+
+		</div>
+	</body>
+</html>
